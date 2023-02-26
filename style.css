@@ -1,0 +1,743 @@
+/* Fonts */
+@font-face {
+    font-family: "Metropolis-Thin";
+    src: url(./Fonts/metropolis/Metropolis-Thin.otf);
+ }
+
+@font-face {
+    font-family: "Metropolis-Light";
+    src: url(./Fonts/metropolis/Metropolis-Light.otf);
+ }
+
+@font-face {
+    font-family: "Metropolis-Regular";
+    src: url(./Fonts/metropolis/Metropolis-Regular.otf);
+ }
+
+ @font-face {
+    font-family: "Metropolis-Medium";
+    src: url(./Fonts/metropolis/Metropolis-Medium.otf);
+ }
+
+ @font-face {
+    font-family: "Metropolis-Bold";
+    src: url(./Fonts/metropolis/Metropolis-Bold.otf);
+ }
+/* End */
+
+
+
+/* Colors */
+:root{
+    --primary1:#551A34;
+    --primary2:#D2C179;
+    --grey: #B8B8B8;
+    --secondary-black: #3F4146;
+}
+/* End */
+
+
+
+/* All Tags  */
+* {
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: 10px; */
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+ }
+
+body a{
+    font-family: 'Metropolis-Medium';
+}
+/* End */
+
+
+
+/* Utility Classes  */
+
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-itmes{
+    align-items: center;
+}
+.h1-heading{
+    font-family: 'Metropolis-Thin';
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+}
+/* End  */
+
+
+
+/* Navigation */
+a.navbar-brand img {
+    width: 180px;
+}
+
+.navlist ul.navbar-nav li.nav-item a.nav-link{
+    padding-right: 2.5rem;
+    font-size: 14px;
+   
+}
+
+.navlist .call-btn h6{
+    padding: 0 0 0 0.5rem;
+    font-size: 14px;
+    color: #551A34;
+}
+
+.navlist .call-btn i{
+    color: #551A34;
+}
+/* End */
+
+
+
+/* Hero Section */
+
+    /* Left Column */
+        section.hero-section .container .hero-top{
+            padding-top: 12rem;
+        }
+
+        section.hero-section .container .hero-top .heading-text h1 {
+            color: #551A34;
+        }
+
+        section.hero-section .container .hero-top .heading-text h1.next-line span{
+            color: var(--primary2);
+        }
+
+        section.hero-section .container .hero-top .heading-text img {
+            width: 350px;
+        }
+
+        section.hero-section .container .hero-top .heading-text p{
+            font-size: 16px;
+            line-height: inherit;
+            padding-top: 2.5rem;
+            font-family: 'Metropolis-Regular';
+        }
+    /* End*/
+
+
+    /* Right Column */
+        section.hero-section .container .hero-top .right-section .row > div {
+            border: 1px solid #ebebeb;
+            background-color: white;
+            width: 165px;
+            height: 70px;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        section.hero-section .container .hero-top .right-section .row > div:hover {
+            filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 0.25));
+        }
+
+        section.hero-section .container .hero-top .right-section .row .car-in img {
+            width: 40px;
+            margin-left: 0.5rem;
+        }
+
+        section.hero-section .container .hero-top .right-section .row .car-in .heaing-car h4 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 2rem;
+            padding-left: 0.5rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            line-height: 1;
+            color: #551A34;
+        }
+
+        section.hero-section .container .hero-top .right-section .row .more-in .heaing-car h4 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 2rem;
+            padding-left: 0.5rem;
+            padding-bottom: 1.6rem;
+            text-align: center;
+            line-height: 1;
+            color: #551A34;
+        }
+
+        section.hero-section .container .hero-top .right-section .row .car-in .heaing-car h4 span, section.hero-section .container .hero-top .right-section .row .more-in .heaing-car h4 span {
+            font-size: 17px;
+            font-weight: 50;
+            word-spacing: 12px;
+            font-family: 'Metropolis-Light';
+            color: #551A34;
+        }
+
+        section.hero-section .container .hero-top .right-section .row .car-in .more-in img {
+            width: 30px;
+        }
+    /* End  */
+
+/* End */ 
+
+
+
+
+/* Companys logo  */
+section.companys-logo .container .row {
+    padding-top: 8rem;
+}
+
+section.companys-logo .container .row > div a img{
+    padding-left: 5rem;
+}
+/* End  */
+
+
+
+/* Why Chooes  */
+section.why-choose .row {
+    padding-top: 9rem;
+}
+
+section.why-choose .row .col-6 img {
+    width: 600px;
+    border-radius: 15px;
+    filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 0.25));
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+section.why-choose .row .col-6 .elp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FFF1D1;
+    margin: -115px 0 0 500px;
+}
+
+section.why-choose .row .col-6 img:hover {
+    filter: drop-shadow(6px -6px 20px rgba(0, 0, 0, 0.25));
+    width: 595px;
+}
+
+section.why-choose .row .right-sec h1 {
+    padding-left: 9rem;
+}
+
+section.why-choose .row .right-sec .easy-payment .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFDED4 0%, rgba(255, 222, 212, 0) 100%);
+}
+
+section.why-choose .row .right-sec .customer-support .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFDED4 0%, #D4EFFF 0.01%, rgba(212, 239, 255, 0) 100%);
+}
+
+section.why-choose .row .right-sec .customer-support .icon img {
+    width: 20px;
+}
+
+section.why-choose .row .right-sec .transparency .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #E4D4FF 0%, rgba(229, 212, 254, 0) 100%);
+}
+
+section.why-choose .row .right-sec .easy-payment .icon img, section.why-choose .row .right-sec .customer-support .icon img, section.why-choose .row .right-sec .transparency .icon img{
+    width: 28.44px;
+    height: 29.49px;
+    margin: 10px 0 0 10px;
+}
+
+section.why-choose .row .right-sec .easy-payment .text-heading-pa h4, section.why-choose .row .right-sec .customer-support .text-heading-pa h4, section.why-choose .row .right-sec .transparency .text-heading-pa h4 {
+    font-size: 18px;
+}
+
+section.why-choose .row .right-sec .easy-payment .text-heading-pa p, section.why-choose .row .right-sec .customer-support .text-heading-pa p, section.why-choose .row .right-sec .transparency .text-heading-pa p {
+    font-size: 11px;
+}
+
+section.why-choose .row .right-sec .easy-payment .text-heading-pa, section.why-choose .row .right-sec .customer-support .text-heading-pa, section.why-choose .row .right-sec .transparency .text-heading-pa {
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+/* End  */
+
+
+
+/* Company  */
+section.company-int {
+    width: 100%;
+    height: 300px;
+    margin-top: 5rem;
+    background: linear-gradient(180deg, #FEE1ED 0%, rgba(236, 247, 255, 0) 79.56%);
+}
+
+section.company-int .container .row .col-3 {
+    padding-top: 5rem;
+    padding-left: 9rem;
+    text-align: center;
+    /* display: inline;
+    align-items: center;
+    justify-content: center; */
+}
+
+section.company-int .container .row .col-3 h3 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 600;
+    font-family: 'Metropolis-Medium';
+    padding-top: 2rem;
+}
+
+section.company-int .container .row .col-3 h3 span {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Metropolis-Medium';
+}
+/* Company End */
+
+
+
+/* Relx  */
+section.relx .container .row {
+    padding-top: 9rem;
+}
+
+section.relx .container .row .col-6 h1.h1-heading::after, section.insurance-services .container .row h1::after , section.happy-customers .container .row h1::after, section.How-it-work .container .row h1::after{
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #FFD42E;
+    display: block;
+    margin: auto;
+    margin-right: 30rem;
+    margin-top: 0.5rem;
+}
+
+section.relx .container .row .col-6 p{
+    font-size: 13px;
+    line-height: 1;
+    padding-top: 1rem;
+    font-family: 'Metropolis-Light';
+}
+
+section.relx .container .row .col-6 img {
+    width: 430px;
+    padding: 0 0 0 100px;
+    margin: -46px 0 0 50px;
+}
+
+section.relx .container .row .col-6 h2{
+    text-align: center;
+    font-size: 25px;
+    padding-left: 6rem;
+    font-family: 'Metropolis-Bold';
+}
+
+section.relx .container .row .relx-heading {
+    padding-top: 5rem;
+}
+/* Relx End */
+
+
+/* Insurance Services */
+section.insurance-services {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(180deg, #FFF5DB 26.81%, rgba(236, 247, 255, 0) 100%);
+    margin-top: 6rem;
+}
+
+section.insurance-services .container .row h1 {
+    padding-top: 2rem;
+    padding-left: 25rem;
+}
+
+.motor, .travel, .home {
+    width: 300px;
+    height: 330px;
+    background-color: #FBF9F9;
+    border: 1px solid #E8E8E8;
+    padding: 30px;
+    margin-top: 4rem;
+    border-radius: 20px;
+    /* z-index: 1; */
+    /* filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.25)); */
+    transition: all 0.5s ease;
+}
+
+
+.motor:hover, .travel:hover, .home:hover {
+    filter: drop-shadow(-1px 1px 15px rgba(0, 0, 0, 0.25));
+}
+
+.motor .icon {
+    background: #E5FED9;
+}
+
+.travel .icon {
+    background: #D9F0FE;
+}
+
+.home .icon {
+    background: #FED9D9;
+}
+
+.motor .icon, .travel .icon, .home .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.motor .icon img {
+    width: 40px;
+    padding: 15px 0 0 10px;
+}
+
+.travel .icon img {
+    width: 35px;
+    padding: 12px 0 0 6px;
+}
+
+.home .icon img {
+    width: 35px;
+    padding: 12px 0 0 9px;
+}
+
+.motor .heading-par h3, .travel .heading-par h3, .home .heading-par h3 {
+    color: #551A34;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Metropolis-Bold';
+}
+
+.motor .heading-par p, .travel .heading-par p, .home .heading-par p {
+    color: #551A34;
+    font-size: 12px;
+    font-family: 'Metropolis-Light';
+}
+
+.motor .get-btn, .travel .get-btn, .home .get-btn {
+    width: 120px; 
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #551A34;
+}
+
+.motor .get-btn h4, .travel .get-btn h4, .home .get-btn h4 {
+    font-size: 14px;
+    margin: 7px 0 0 15px;
+}
+
+.motor .get-btn a, .travel .get-btn a, .home .get-btn a {
+    color: #551A34;
+    text-decoration: none;
+}
+
+.slick-track:after, .slick-track:before {
+    padding-bottom: 1.5rem;
+}
+
+/* Insurance Services ENd */
+
+
+
+/* Happy Customers */
+section.happy-customers .container .happy {
+    padding-top: 20rem;
+}
+
+section.happy-customers .container .happy h1, section.happy-customers .container .happy p {
+    padding-left: 25rem;
+}
+
+section.happy-customers .container .customers .col-4 .client-01 {
+    width: 340px;
+    height: 250px;
+    background-color: #ffffff;
+    border: 1px solid #E8E8E8;
+    padding: 20px;
+    margin-top: 4rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+section.happy-customers .container .customers .col-4 .client-01:hover {
+    filter: drop-shadow(-1px 1px 15px rgba(0, 0, 0, 0.25));
+}
+
+section.happy-customers .container .customers .col-4 .client-01 .img-client-happy {
+    padding-left: 1rem;
+}
+
+section.happy-customers .container .customers .col-4 .client-01 p {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+section.happy-customers .container .customers .col-4 .client-01 img {
+    padding-left: 7rem;
+}
+
+section.happy-customers .container .customers .col-4 .client-01 h6 {
+    padding-left: 7.5rem;
+    padding-top: 0.6rem;
+    font-weight: 200;    
+}
+/* Happy Customers End */
+
+
+
+
+/* How it Work */
+section.How-it-work .container .how-work {
+    padding-top: 7rem;
+    padding-left: 30rem;
+}
+
+section.How-it-work .container .row .col-6 .cell-1 {
+    width: 500px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #E8E8E8;
+    border-radius: 15px;
+    padding: 1.6rem;
+    transition: all 0.5s ease;
+}
+
+section.How-it-work .container .row .col-6 .cell-1:hover {
+    filter: drop-shadow(-1px 1px 8px rgba(0, 0, 0, 0.25));
+}
+
+section.How-it-work .container .row .col-6 .cell-1 h4 {
+    font-size: 1rem;
+    font-family: 'Metropolis-Regular';
+}
+
+section.How-it-work .container .all-faqs-1 {
+    padding-top: 3rem;
+}
+
+section.How-it-work .container .all-faqs-2 {
+    padding-top: 2.5rem;
+}
+
+section.How-it-work .container .row .col-6 .cell-1 img {
+    width: 12px;
+    float: right;
+    margin: -20px 0 0 0;
+}
+/* How it Work End */
+
+
+
+/* Company Information  */
+section.company-information {
+    margin-top: 10rem;
+    width: 100%;
+    height: 400px;
+    background-color: #FFE9F2;
+}
+
+section.company-information .container .row .help-info h3 {
+    padding-top: 8rem;
+}
+
+section.company-information .container .row .help-info .call-icon {
+    padding-top: 2rem;
+}
+
+section.company-information .container .row .help-info .call-icon img {
+    width: 22px;
+}
+
+section.company-information .container .row .help-info .call-icon .call-details {
+    padding-left: 1rem;
+}
+
+section.company-information .container .row .help-info .call-icon .call-details h6 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+section.company-information .container .row .help-info .call-icon .call-details h5 {
+    font-size: 20px;
+    font-family: "Metropolis-Bold";
+}
+
+section.company-information .container .row .side-img img {
+    padding-top: 4rem;
+    width: 500px;
+    transition: all 0.3s ease;
+}
+
+section.company-information .container .row .side-img img:hover {
+    width: 510px;
+}
+/* Company Information End */
+
+
+
+
+/* Comapany More Information  */
+section.company-more {
+    padding-top: 6rem;
+    padding-right: 3rem;
+}
+
+section.company-more .container .row .left-side p {
+    font-size: 12px;
+    padding-top: 1rem;
+}
+section.company-more .container .row .right-side {
+    padding-left: 6rem;
+}
+
+section.company-more .container .row .right-side ul li, section.company-more .container .row .right-side2 ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    font-size: 12px;
+}
+
+section.company-more .container .row .right-side2 ul {
+    padding-bottom: 1rem;
+}
+
+section.company-more .container .row .right-side ul li a, section.company-more .container .row .right-side2 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.company-more .container .row .right-side h4, section.company-more .container .row .right-side2 h4 {
+    padding-bottom: 1rem;
+    font-size: 18px;
+    font-family: "Metropolis-Bold";
+}
+
+section.company-more .container .row .right-side2 {
+    padding-left: 7rem;
+}
+
+section.company-more .container .row .right-side2 .social-icons i {
+    padding-left: 5px;
+}
+/* Comapany More Information End */
+
+
+
+/* Comapny Important links */
+section.important-links {
+    padding-top: 3rem;
+}
+
+section.important-links .container {
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+
+}
+
+section.important-links .container .row {
+    padding-top: 2.5rem;
+}
+
+section.important-links .container .row .col-3 h4 {
+    padding-bottom: 1rem;
+    font-size: 18px;
+    font-family: "Metropolis-Bold";
+}
+
+section.important-links .container .row .col-3 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.important-links .container .row .col-3 ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    font-size: 12px;
+}
+/* Comapny Important links End */
+
+
+
+
+/* Comapny last links  */
+section.last-links .container {
+    margin-top: 32rem;
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+section.last-links .container .last-line {
+    padding-top: 2rem;
+}
+
+section.last-links .container .last-line .col-3 h4 {
+    padding-top: 3rem;
+    font-size: 18px;
+    font-family: "Metropolis-Bold";
+}
+
+section.last-links .container .last-line .col-3 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.last-links .container .last-line .col-3 ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    font-size: 12px;
+}
+/* Comapny last links End */
+
+
+
+
+/* Copyrights  */
+section.copyrights {
+    margin-top: 12rem;
+    width: 100%;
+    height: 50px;
+    background-color: #D2C179;
+}
+
+section.copyrights h5 {
+    text-align: center;
+    font-size: small;
+    padding-top: 1rem;
+}
+/* Copyrights End */
